@@ -1,6 +1,76 @@
-section {
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+section#hero {
   background-image: url('./tradeshow.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section:after {
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  font-size: 50px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.section-heading h2 {
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.section-heading p {
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+
+section#video-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.video {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #18aba1;
+    font-size: 18px;
+    border: 1px solid #18aba1;
+    padding: 5px 10px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
