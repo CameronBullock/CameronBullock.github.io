@@ -1,29 +1,119 @@
 <head>
   <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./main.js"></script>
 </head>
 
 <section id=hero>
-  <h1>Money 20-20 Video Booth</h1>
+  <h1>MX Slow Mo Booth</h1>
 </section>
 
-<div class="section-heading">
-  <h2>Monday</h2>
-  <p>October 23rd</p>
+<section class="day-tabs">
+
+  <ul class="tabs">
+    <li class="tab-link current" data-tab="tab-1"><span>Oct 21</span></li>
+    <li class="tab-link" data-tab="tab-2"><span>Oct 22</span></li>
+    <li class="tab-link" data-tab="tab-3"><span>Oct 23</span></li>
+    <li class="tab-link" data-tab="tab-4"><span>Oct 24</span></li>
+    <li class="tab-link" data-tab="tab-5"><span>Oct 25</span></li>
+    <li class="tab-link" data-tab="tab-6"><span>Oct 26</span></li>
+  </ul>
+
+<div id="tab-1" class="tab-content current">
+<section id="video-grid">
+
+  <div class="section-heading">
+    <h2>Morning</h2>
+  </div>
+
+  <div class="videos video-row">
+    <div class="video">
+      <div class="js-video-control" data-video="video1">
+        <video
+          class="video_src"
+          id="video1"
+          src="https://player.vimeo.com/external/237652435.hd.mp4?s=6fb3e287562892777d4d01fb9c1812d5a7a33cd4&profile_id=175" poster="./poster-frame.jpg"
+          preload="none">
+        </video>
+      </div>
+      <a href="https://player.vimeo.com/external/237652435.source.mp4?s=83e318e339cb3882719eda4992ef1f2e2f28002b&profile_id=0&download=1" target="_blank">Download Video</a>
+    </div>
+
+    <div class="video">
+      <div class="js-video-control" data-video="video2">
+        <video
+          class="video_src"
+          id="video2"
+          src="https://player.vimeo.com/external/237652435.hd.mp4?s=6fb3e287562892777d4d01fb9c1812d5a7a33cd4&profile_id=175" poster="./poster-frame.jpg"
+          preload="none">
+        </video>
+      </div>
+      <a href="https://player.vimeo.com/external/237652435.source.mp4?s=83e318e339cb3882719eda4992ef1f2e2f28002b&profile_id=0&download=1" target="_blank">Download Video</a>
+    </div>
+
+    <div class="video">
+      <div class="js-video-control" data-video="video3">
+        <video
+          class="video_src"
+          id="video3"
+          src="https://player.vimeo.com/external/237652435.hd.mp4?s=6fb3e287562892777d4d01fb9c1812d5a7a33cd4&profile_id=175" poster="./poster-frame.jpg"
+          preload="none">
+        </video>
+      </div>
+      <a href="https://player.vimeo.com/external/237652435.source.mp4?s=83e318e339cb3882719eda4992ef1f2e2f28002b&profile_id=0&download=1" target="_blank">Download Video</a>
+    </div>
+
+  </div>
+</section>
 </div>
 
+<div id="tab-2" class="tab-content">
 <section id="video-grid">
-  <div class="video">
-    <iframe src="https://player.vimeo.com/video/237652435" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <a href="https://player.vimeo.com/external/237652435.source.mp4?s=83e318e339cb3882719eda4992ef1f2e2f28002b&profile_id=0&download=1" target="_blank">Download</a>
+
+  <div class="section-heading">
+    <h2>Morning 2</h2>
   </div>
 
-  <div class="video">
-    <iframe src="https://player.vimeo.com/video/237652435" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <a href="https://player.vimeo.com/external/237652435.source.mp4?s=83e318e339cb3882719eda4992ef1f2e2f28002b&profile_id=0&download=1" target="_blank">Download</a>
-  </div>
+  <div class="videos video-row">
+    <div class="video">
+      <div class="js-video-control" data-video="video1">
+        <video
+          class="video_src"
+          id="video1"
+          src="https://player.vimeo.com/external/237652435.hd.mp4?s=6fb3e287562892777d4d01fb9c1812d5a7a33cd4&profile_id=175" poster="./poster-frame.jpg"
+          preload="none">
+        </video>
+      </div>
+      <a href="https://player.vimeo.com/external/237652435.source.mp4?s=83e318e339cb3882719eda4992ef1f2e2f28002b&profile_id=0&download=1" target="_blank">Download Video</a>
+    </div>
 
-  <div class="video">
-    <iframe src="https://player.vimeo.com/video/237652435" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <a href="https://player.vimeo.com/external/237652435.source.mp4?s=83e318e339cb3882719eda4992ef1f2e2f28002b&profile_id=0&download=1" target="_blank">Download</a>
+    <div class="video">
+      <div class="js-video-control" data-video="video2">
+        <video
+          class="video_src"
+          id="video2"
+          src="https://player.vimeo.com/external/237652435.hd.mp4?s=6fb3e287562892777d4d01fb9c1812d5a7a33cd4&profile_id=175" poster="./poster-frame.jpg"
+          preload="none">
+        </video>
+      </div>
+      <a href="https://player.vimeo.com/external/237652435.source.mp4?s=83e318e339cb3882719eda4992ef1f2e2f28002b&profile_id=0&download=1" target="_blank">Download Video</a>
+    </div>
+
+    <div class="video">
+      <div class="js-video-control" data-video="video3">
+        <video
+          class="video_src"
+          id="video3"
+          src="https://player.vimeo.com/external/237652435.hd.mp4?s=6fb3e287562892777d4d01fb9c1812d5a7a33cd4&profile_id=175" poster="./poster-frame.jpg"
+          preload="none">
+        </video>
+      </div>
+      <a href="https://player.vimeo.com/external/237652435.source.mp4?s=83e318e339cb3882719eda4992ef1f2e2f28002b&profile_id=0&download=1" target="_blank">Download Video</a>
+    </div>
+
   </div>
+</section>
+</div>
+
+<!-- End Tabs -->
 </section>
