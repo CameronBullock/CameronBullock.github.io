@@ -14,7 +14,7 @@ section#hero {
   flex-direction: column;
 }
 
-section:after {
+section#hero:after {
     content: '';
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -47,11 +47,15 @@ h1 {
 }
 
 
-section#video-grid {
+div.video-grid {
   margin-top: 50px;
   margin: 0 auto;
   max-width: 1500px;
   padding: 0 30px;
+}
+
+div.video-grid-morning {
+
 }
 
 .videos {
@@ -87,6 +91,9 @@ section#video-grid {
   }
 }
 
+.video-row {
+  margin: 50px 0;
+}
 
 video {
   width: 100%;
